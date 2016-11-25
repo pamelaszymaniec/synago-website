@@ -1,0 +1,58 @@
+.cta-wrap {
+  @include device(xs) {
+    text-align: justify;
+    .box {
+      padding: 30px 10px !important;
+    }
+    .clearfix h2 {
+      font-size: 27px;
+      padding-top: 30px;
+    }
+    .btn {
+      font-size: 18px !important;
+
+    }
+
+  }
+  .box {
+    padding: 50px;
+  }
+  &.cta-mid {
+    .row {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .box {
+      -webkit-transform: translateY(-5%);
+      -moz-transform: translateY(-5%);
+      -ms-transform: translateY(-5%);
+      -o-transform: translateY(-5%);
+      transform: translateY(-5%);
+    }
+  }
+  .btn {
+    margin-top: 36px;
+  }
+
+}
+
+
+.box {
+  padding: 30px;
+  background: #FFFFFF;
+  box-shadow: 0 0 66px 4px rgba(152, 123, 123, 0.18);
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // Tutaj regulujemy wysokość
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}

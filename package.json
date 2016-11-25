@@ -1,0 +1,24 @@
+{
+  "name": "synago-website",
+  "version": "1.0.0",
+  "description": "Synago website leasing pracowniczy",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-uncss": "^1.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "leasing",
+    "pracownikow"
+  ],
+  "author": "Pamela",
+  "license": "ISC"
+}

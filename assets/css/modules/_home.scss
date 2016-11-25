@@ -1,0 +1,137 @@
+.hero-wrap {
+  padding-top: 60px;
+  //padding-bottom: 120px;
+  position: relative;
+
+  @include device(md-up) {
+    padding-top: 110px;
+    //padding-bottom: 150px;
+
+  }
+
+  .gradient {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+
+    background: #e3e3e3;
+    background: url("../img/synago-praca.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    //background: -webkit-linear-gradient(-170deg, #FFD2D2 60%, #F5FBC6 100%);
+    //background: linear-gradient(-170deg, #FFD2D2 60%, #F5FBC6 100%);
+  }
+}
+
+.stripes {
+  width: 30px;
+}
+
+.info-content {
+  @include device(sm-down) {
+    font-size: 13px;
+    //padding-bottom: 150px;
+
+  }
+  @include device(xs) {
+    font-size: 16px;
+    //padding-bottom: 150px;
+
+  }
+}
+.info-img {
+  //@include device(sm-down) {
+  //  font-size: 13px;
+  //  //padding-bottom: 150px;
+  //
+  //}
+  @include device(xs) {
+   padding: 0 30px;
+    //max-width: 50% !important;
+    //padding-bottom: 150px;
+
+  }
+}
+
+
+//.lady-img {
+//  @include device(xs-down) {
+//    width: 30px;
+//
+//  }
+//}
+// ABOUT US SECTION
+
+#about-us {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  h2, .icons {
+    color: $headColor;
+  }
+  p {
+    color: $headColor;
+  }
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 190vw;
+    height: 190vw;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+    transform: translateX(-50%);
+    //
+    //border-radius: 100%;
+    display: block;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aebf76+0,dce3c4+58,fefefd+100 */
+    //background: rgb(174,191,118); /* Old browsers */
+    //background: -moz-linear-gradient(top,  rgba(174,191,118,1) 0%, rgba(220,227,196,1) 58%, rgba(254,254,253,1) 100%); /* FF3.6-15 */
+    //background: -webkit-linear-gradient(top,  rgba(174,191,118,1) 0%,rgba(220,227,196,1) 58%,rgba(254,254,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    //background: linear-gradient(to bottom,  rgba(174,191,118,1) 0%,rgba(220,227,196,1) 58%,rgba(254,254,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebf76', endColorstr='#fefefd',GradientType=0 ); /* IE6-9 */
+
+    ///* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,00abdc+100,00abdc+100 */
+    //background: rgb(240,249,255); /* Old browsers */
+    //background: -moz-linear-gradient(top,  rgba(240,249,255,1) 0%, rgba(0,171,220,1) 100%, rgba(0,171,220,1) 100%); /* FF3.6-15 */
+    //background: -webkit-linear-gradient(top,  rgba(240,249,255,1) 0%,rgba(0,171,220,1) 100%,rgba(0,171,220,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    //background: linear-gradient(to bottom,  rgba(240,249,255,1) 0%,rgba(0,171,220,1) 100%,rgba(0,171,220,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#00abdc',GradientType=0 ); /* IE6-9 */
+
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a4cdd8+0,f0f9ff+90 */
+    //background: rgb(164,205,216); /* Old browsers */
+    //background: -moz-linear-gradient(top,  rgba(164,205,216,1) 0%, rgba(240,249,255,1) 90%); /* FF3.6-15 */
+    //background: -webkit-linear-gradient(top,  rgba(164,205,216,1) 0%,rgba(240,249,255,1) 90%); /* Chrome10-25,Safari5.1-6 */
+    //background: linear-gradient(to bottom,  rgba(164,205,216,1) 0%,rgba(240,249,255,1) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4cdd8', endColorstr='#f0f9ff',GradientType=0 ); /* IE6-9 */
+
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00abdc+0,00abdc+0,f0f9ff+100 */
+    background: rgba(240,249,255,1); /* Old browsers */
+    //background: -moz-linear-gradient(top,  rgba(0,171,220,1) 0%, rgba(0,171,220,1) 0%, rgba(240,249,255,1) 100%); /* FF3.6-15 */
+    //background: -webkit-linear-gradient(top,  rgba(0,171,220,1) 0%,rgba(0,171,220,1) 0%,rgba(240,249,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    //background: linear-gradient(to bottom,  rgba(0,171,220,1) 0%,rgba(0,171,220,1) 0%,rgba(240,249,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abdc', endColorstr='#f0f9ff',GradientType=0 ); /* IE6-9 */
+
+
+    @include device(sm-down) {
+      border-radius: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+  }
+}
+

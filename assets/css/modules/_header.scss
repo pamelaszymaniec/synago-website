@@ -1,0 +1,76 @@
+.header {
+  @extend .transition;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 66px 4px rgba(152, 123, 123, 0);
+  @include device(sm-down) {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 66px 4px rgba(152, 123, 123, 0.18);
+  }
+  &.scrolled {
+    background: whitesmoke;
+    box-shadow: 0 0 66px 4px rgba(152, 123, 123, 0.18);
+    .row {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .logo img {
+      max-width: 200px;
+
+    }
+  }
+  .row {
+    @extend .transition;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include device(sm-down) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .logo img {
+        max-width: 200px;
+      }
+      li {
+        display: none
+      }
+      .menu-trigger {
+        display: inline-block;
+
+      }
+    }
+    @include device(md) {
+      .menu-trigger {
+        display: none;
+      }
+    }
+  }
+  .logo img {
+    max-width: 260px;
+  }
+  nav {
+    text-align: right;
+
+    li {
+      display: inline-block;
+    }
+    a {
+      font-size: 18px;
+      color: $headColor;
+      text-transform: uppercase;
+      font-family: $headTypeLight;
+      letter-spacing: 1px;
+      display: block;
+      padding: 10px;
+    }
+  }
+}
+
+#menu.active li {
+  display: block;
+  margin-left: 18px;
+}
