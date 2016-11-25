@@ -101,7 +101,7 @@ img {
           display: none; }
         .header .row .menu-trigger {
           display: inline-block; } }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    @media only screen and (min-width: 992px) {
       .header .row .menu-trigger {
         display: none; } }
   .header .logo img {
@@ -117,7 +117,7 @@ img {
       font-family: "Ubuntu Condensed", sans-serif;
       letter-spacing: 1px;
       display: block;
-      padding: 10px; }
+      padding: 10px 0px 10px 20px; }
 
 #menu.active li {
   display: block;
@@ -186,6 +186,9 @@ img {
         border-radius: 0;
         height: 100%;
         width: 100%; } }
+
+#offer p {
+  margin: 0 !important; }
 
 .process-wrap {
   position: relative;
