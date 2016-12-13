@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     var header = $('header');
-
+    var offset = $(header).offset();
     $('body').on('click', '.scroller', function () {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top - 90
@@ -14,8 +14,20 @@ $(document).ready(function () {
         headerAnimate();
     });
 
+
+    function checkTheHeader() {
+        var offset = $(header).offset();
+        if (offset.top > 20) {
+            header.addClass('scrolled');
+        } else {
+            header.removeClass('scrolled');
+        }
+    }
+    checkTheHeader();
+
     function headerAnimate() {
         var scrollTop = $(window).scrollTop();
+        var offset = $(header).offset();
         if (scrollTop > 20) {
             header.addClass('scrolled');
         } else {

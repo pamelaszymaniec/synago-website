@@ -7,6 +7,7 @@ var cleancss = require('gulp-clean-css');
 
 var jsFiles = [
     'assets/js-dev/jquery-3.1.1.min.js',
+    'assets/js-dev/bootstrap.min.js',
     'assets/js-dev/custom.js'
 ];
 
